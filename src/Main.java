@@ -1,8 +1,4 @@
 import java.util.Scanner;
-import java.util.SortedMap;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Scanner scn1 = new Scanner(System.in);
@@ -51,15 +47,15 @@ public class Main {
                     break;
             }
             if (deneme <= 4) {
-                System.out.println("");
-                for (int i = 0; i < sablon.length; i++) {//sablonu yaz
+                System.out.println();
+                for (char[] chars : sablon) {//sablonu yaz
                     for (int j = 0; j < sablon[0].length; j++) {
-                        System.out.print(sablon[i][j] + " ");
+                        System.out.print(chars[j] + " ");
                     }
                     System.out.println();
                 }
-                for (int i = 0; i < cevapYaz.length; i++) {//cevap yaz
-                    System.out.print(cevapYaz[i] + " ");
+                for (char c : cevapYaz) {//cevap yaz
+                    System.out.print(c + " ");
                 }
                 System.out.print("\n(SEÇ) Harf Tahmin(1),Kelime Tahmin(2) : ");
                 int select = scn1.nextByte();
