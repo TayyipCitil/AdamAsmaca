@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -7,9 +8,7 @@ public class Main {
         System.out.print("Kelime gir:");
         String cevap = scn1.nextLine();
         char[] cevapYaz = new char[cevap.length()];
-        for (int i = 0; i < cevapYaz.length; i++) {
-            cevapYaz[i] = '?';
-        }
+        Arrays.fill(cevapYaz, '?');
         for (int i = 1; i < 20; i++) {//cevap gözükmesin diye boşluk
             System.out.println();
         }
